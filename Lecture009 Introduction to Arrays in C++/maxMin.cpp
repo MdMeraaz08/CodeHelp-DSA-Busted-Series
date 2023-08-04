@@ -7,32 +7,32 @@ int getMin(int num[], int n) {
     
     for(int i = 0; i<n; i++) {
         
-        mini = min( mini, num[i]);
+        // mini = min( mini, num[i]);
         
-        //if(num[i] < min){
-        //    min = num[i];
-        //}
+        if(num[i] < min){
+           min = num[i];
+        }
     }
 
     //returning min value
-    return mini;
+    return min;
 }
 
 int getMax(int num[], int n) {
 
-    int maxi = INT_MIN;
+    // int maxi = INT_MIN;
     
     for(int i = 0; i<n; i++) {
 
-        maxi = max(maxi, num[i]);
+        //maxi = max(maxi, num[i]);
 
-       // if(num[i] > max){
-         //   max = num[i];
-       // }
+       if(num[i] > max){
+           max = num[i];
+       }
     }
 
     //returning max value
-    return maxi;
+    return max;
 }
 
 int main() {
